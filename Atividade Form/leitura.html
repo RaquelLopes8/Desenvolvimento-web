@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Somente leitura</title>
+</head>
+<body>
+
+    <h1>Vizualizar cadastro</h1>
+
+    <form action="">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" value="Ricardito" readonly>
+        </div>
+        
+        <br>
+        
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" value="ricardo@eletro.com" readonly>
+        </div>
+        
+        <br>
+        
+        <div>
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="telefone" value="85 9 85009865" id="tel" readonly>
+        </div>
+        
+        <br>
+        
+        <div>
+            <label for="produto">Nome do produto:</label>
+            <input type="text" id="produto" value="Fogão" readonly>
+        </div>
+        
+        <br>
+        
+        <div>
+            <label for="preco">Tipo do produto</label>
+            <select name="tipo-produto" id="tipo-produto" disabled>
+                <option value="cozinha">Produtos para cozinha</option>
+                <option value="quarto">Produtos para quarto</option>
+                <option value="sala">Produtos para sala</option>
+            </select>
+        </div>
+        
+        <br>
+        
+        <div>
+            <label for="preco">Preço do produto: R$ </label>
+            <input type="number" id="preco" value="500" readonly>
+        </div>
+        
+        <br>
+        
+        <div>
+            <span>Você aceita nossas condições?</span>
+            <input type="checkbox" name="aceito" id="aceito" value="aceito" checked disabled>
+            <label for="aceito">Aceito</label>
+        </div>
+        
+        <br>
+        
+        <input type="submit" value="Cadastrar" disabled>
+    </form>
+</body>
+</html>

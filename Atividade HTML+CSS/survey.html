@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <div class="conteiner">
+        <div class="survey">
+            <form action="">
+                <div class="nome">
+                    <label for="nome">Nome</label> <br>
+                    <input type="text" id="nome" placeholder="Seu nome">
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label> <br>
+                    <input type="text" id="email" placeholder="Seu e-mail">
+                </div>
+
+                <div>
+                    <label for="idade">Idade <span>(opicional)</span></label> <br>
+                    <input type="number" id="idade" placeholder="Sua idade">
+                </div>
+                
+                <div>
+                    <label for="pergunta1">Qual opção melhor descreve o seu estado atual?</label> <br>
+                    <select name="pergunta1" id="pergunta1">
+                        <option value="default">Selecione a ocupação</option>
+                        <option value="estudante">Estudante</option>
+                        <option value="CLT">CLT</option>
+                        <option value="naodiz">Prefiro não dizer</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="radio">
+                    <label>Você recomendaria este projeto?</label> <br>
+
+                    <input type="radio" name="sim" id="opcao1">
+                    <label for="opcao1">Com certeza</label>
+                    <br>
+                    <input type="radio" name="talvez" id="opcao2">
+                    <label for="opcao2">Talvez</label>
+                    <br>
+                    <input type="radio" name="nao" id="opcao3">
+                    <label for="opcao3">Não sei</label>
+                </div>
+
+                <div class="checkbox">
+                    <label>O que você gostaria de melhorar? <span>(Selecione quantas quiser)</span></label>
+                    <br>
+                    <input type="checkbox" name="tempo" id="maistempo">
+                    <label for="maistempo">Ter mais tempo para estudar</label>
+                    <br>
+                    <input type="checkbox" name="estudar" id="estudar">
+                    <label for="estudar">Estudar mais o que gosto</label>
+                    <br>
+                    <input type="checkbox" name="gerencia" id="gerencia">
+                    <label for="gerencia">Gerenciar projetos</label>
+                    <br>
+                    <input type="checkbox" name="node" id="node">
+                    <label for="node">Node Js</label>
+                </div>
+
+                <div class="textarea">
+                    <label for="coment">Algum comentário ou sugestão?</label> <br>
+                    <textarea name="coment" id="coment" cols="50" rows="5" placeholder="deixe algum comentário ou sugestão"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar" id="enviar">
+        </div>
+    </div>
+</body>
+</html>
