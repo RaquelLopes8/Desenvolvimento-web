@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.modal{
+    height: 400px;
+    width: 50%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 80px;
+    overflow:auto;
+}
+.modal::-webkit-scrollbar {
+    width: 8px;
+}
+.overlay{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.507);
+    position: absolute;
+}
+.listCompri{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.listCompri hr{
+    bottom: 0;
+    position: absolute;
+    width: 95%;
+    height: 5px;
+    right: 0;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+}
+.iconCompri{
+    left: 0;
+    top: 0;
+    font-family: 'Icons';
+    font-size: 100px;
+    position: absolute;
+}
+.txtCompri{
+    margin-bottom: 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 100px;
+    text-align: left;
+}
+.iconApagar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Icons';
+    font-size: 40px;
+    cursor: pointer;
+}
+.overlay.mostrar{
+    display: flex;
+}
+.bgColor{
+    background-color: #008080ff;
+}
+.container1{
+    text-align: center;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerIcon{
+    display: flex;
+    justify-content: space-between;
+    font-size: 150px;
+    padding: 80px;
+}
+.containerIcon .icon:hover{
+    cursor: pointer;
+    transition: all 0.3s;
+    text-shadow: -5px -5px 7px rgba(255, 255, 255, 0.753), 5px 5px 7px rgba(0, 0, 0, 0.514);
+}
+.colorDia{
+    background-color: #d6eb10ff;
+}
+.colorTxtDia{
+    color: #d6eb10ff;
+}
+.colorNoite{
+    background-color: #5500d4ff;
+    color: white;
+}
+.contDias{
+    width: 150px;
+    height: 150px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.contDias:hover{
+    box-shadow: inset 5px 5px 10px rgba(255, 255, 255, 0.753), 5px 5px 10px rgba(0, 0, 0, 0.514);
+}
+.txtDias{
+    font-size: 50px;
+    font-family: Helvetica, sans-serif;
+}
+@font-face {
+    font-family: Icons;
+    src: url(./assets/Icons.ttf);
+  }
+.icon{
+    font-family: 'Icons';
+    text-decoration: none;
+}
+#dia:after{
+    content:'c';
+}
+#dia:hover:after{
+    font-family: Helvetica, sans-serif;
+    content:'AM';
+    font-size: 35px;
+}
+#noite:after{
+    content:'d';
+}
+#noite:hover:after{
+    font-family: Helvetica, sans-serif;
+    content:'PM';
+    font-size: 35px;
+}

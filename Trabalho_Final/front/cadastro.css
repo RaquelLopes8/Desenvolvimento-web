@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cadastro{
+    padding: 50px;
+    text-align: left;
+}
+
+#check, .check{
+    margin-bottom: 15px;
+}
